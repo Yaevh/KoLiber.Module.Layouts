@@ -71,6 +71,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Elements\Section\Directive.js" />
+    <Content Include="Assets\Elements\Section\Model.js" />
     <Content Include="Web.config" />
     <Content Include="Assets.json" />
     <Content Include="Scripts\Web.config" />
@@ -89,11 +91,28 @@
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Orchard.Layouts\Orchard.Layouts.csproj">
+      <Project>{6BD8B2FA-F2E3-4AC8-A4C3-2925A653889A}</Project>
+      <Name>Orchard.Layouts</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\" />
+    <Folder Include="Views\LayoutEditor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drivers\SectionDriver.cs" />
+    <Compile Include="Elements\Section.cs" />
+    <Compile Include="Handlers\SectionResourceRegistrations.cs" />
+    <Compile Include="ResourceManifests\SectionResourceManifest.cs" />
+    <Compile Include="Handlers\SectionModelMap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Elements\Section.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LayoutEditor.Template.Section.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

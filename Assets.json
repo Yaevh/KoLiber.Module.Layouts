@@ -1,6 +1,13 @@
 [
-    {
-        "inputs": [ "Assets/Styles.less" ],
-        "output": "Styles/Styles.css"
-    }
+  {
+    "inputs": [ "Assets/Elements/Section/Style.less" ],
+    "output": "Styles/SectionElement.css"
+  },
+  {
+    "inputs": [
+      "Assets/Elements/Section/Directive.js",
+      "Assets/Elements/Section/Model.js"
+    ],
+    "output": "Scripts/SectionElement.js"
+  }
 ]

@@ -6,7 +6,3 @@ Version: 0.1
 OrchardVersion: 1.10
 Description: Various layout elements for KoLiber website
 Dependencies: Orchard.Layouts, Orchard.MediaLibrary
-
-Features:
-    KoLiber.Module.Layouts.Section:
-        Description: Adds Section element to Orchard layout engine.

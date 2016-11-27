@@ -1,0 +1,7 @@
+﻿@using Orchard.Layouts.Helpers
+@{
+    var tagBuilder = TagBuilderExtensions.CreateElementTagBuilder(Model, "section");
+}
+@tagBuilder.StartElement
+@DisplayChildren(Model)
+@tagBuilder.EndElement
